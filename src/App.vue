@@ -17,12 +17,19 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  background-color: #f2f2f2;
   color: #2c3e50;
-  margin-top: 60px;
+  text-align: center;
 }
 </style>
