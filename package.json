@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fontsource/work-sans": "^4.5.14",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
