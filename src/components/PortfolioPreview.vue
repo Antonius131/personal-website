@@ -1,8 +1,10 @@
 <template>
-   <section id="content-section">
+   <section id="content-section" class="py-5 px-5">
       <div class="row mb-2">
          <div class="col-12">
-            <h4> - Back</h4>
+            <h4>
+               <router-link to="/">Back</router-link>
+            </h4>
          </div>
       </div>
       <div class="row mb-3">
@@ -33,7 +35,7 @@
 
       .image-box {
 
-         background-color: #fff;
+         background-color: #f2f2f2;
          height: 550px
       }
    }
