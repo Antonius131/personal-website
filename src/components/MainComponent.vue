@@ -1,13 +1,20 @@
 <template>
-   <div id="hero-container" class="col-12 col-md-6 py-5 px-5">
-      <h1>Hello</h1>
-      <p>I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations. <i>SelfImproving</i> founder and <i>FeedingCats</i> contributor. :)</p>
+   <div id="hero-container" class="col-12 col-md-6 py-5 px-5 d-flex flex-column justify-content-between">
+      <div>
+         <h1>Hello</h1>
+         <p>I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations. <i>SelfImproving</i> founder and <i>FeedingCats</i> contributor. :)</p>
+      </div>
+      <NavbarComponent />
    </div>
 </template>
 
 <script>
+   import NavbarComponent from './NavbarComponent.vue';
+
    export default {
-      
+      components: { 
+      NavbarComponent
+      }
    }
 </script>
 
