@@ -1,18 +1,18 @@
 <template>
   <div id="app" class="container">
     <div class="row" id="main-content">
-      <MainComponent />
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import MainComponent from './components/MainComponent.vue';
+
 
 export default {
   name: 'App',
   components: {
-    MainComponent
+    
   }
 }
 </script>
