@@ -1,9 +1,15 @@
+import VueRouter from 'vue-router';
 import Vue from 'vue'
-import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-Vue.config.productionTip = false
+window.Vue = require('vue');
+Vue.use(VueRouter);
+
+import App from './App.vue';
+import router from './router';
+
 
 new Vue({
-  render: h => h(App),
+  router,
+  render: h => h(App)
 }).$mount('#app')
