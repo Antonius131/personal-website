@@ -2,7 +2,7 @@
    <nav class="navbar">
       <ul class="navbar-nav">
          <li class="nav-item">
-            <a href="#">Here</a> you can see <a href="#">my works</a>
+            <router-link to="/works/">Here</router-link> you can see <router-link to="/works/">my works</router-link>
          </li>
          <li class="nav-item">
             Something <a href="#">about me</a>
@@ -14,7 +14,7 @@
    </nav>
 </template>
 
-<script lang="ts">
+<script>
    export default {
 
    }
