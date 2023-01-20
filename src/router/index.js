@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 
 import MainComponent from '../components/MainComponent'
 import PortfolioPreview from '../components/PortfolioPreview'
+import AboutMe from '../components/AboutMe'
 
 const routes = [
   {
@@ -14,6 +15,10 @@ const routes = [
   {
     path: '/works',
     component: PortfolioPreview
+  },
+  {
+    path: '/about',
+    component: AboutMe
   }
 ]
 
