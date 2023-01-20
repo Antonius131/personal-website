@@ -29,14 +29,14 @@
    }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
    #content-section {
       height: 100%;
 
       .image-box {
 
          background-color: #f2f2f2;
-         height: 550px
+         height: 500px
       }
    }
 </style>
