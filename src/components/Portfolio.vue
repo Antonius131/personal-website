@@ -7,17 +7,12 @@
          :imgSrc="works[index].imgSrc"
          :info="works[index].info"
       />
-
       <div class="row">
          <div class="col-6">
-            <Button @click="prevWork()">
-               Prev
-            </Button>
+            <Button @click="prevWork()">Prev</Button>
          </div>
          <div class="col-6 text-end">
-            <Button @click="nextWork()">
-               Next
-            </Button>
+            <Button @click="nextWork()">Next</Button>
          </div>
       </div>
    </section>
