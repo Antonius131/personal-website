@@ -26,7 +26,7 @@
    }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
    #wrapper {
       background-color: #f2f2f2;
 
