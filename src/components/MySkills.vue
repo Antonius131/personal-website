@@ -1,5 +1,5 @@
 <template>
-   <section id="skills-wrapper" class="py-5 px-5">
+   <section class="py-5 px-5">
       <GoBack />
 
       <ul class="mt-5 list-unstyled">
