@@ -1,7 +1,6 @@
 <template>
-   <section id="about-section" class="py-5 px-5">
+   <section class="py-5 px-5">
       <GoBack />
-
       <div class="row">
          <div class="col-12 mb-3">
             <div class="propic">
@@ -13,22 +12,30 @@
             <p>{{ about.text }}</p>
          </div>
       </div>
+      <hr class="my-4">
+      <div class="row">
+         <div class="col-12">
+            <Footer />
+         </div>
+      </div>
    </section>
 </template>
 
 <script>
 import GoBack from './GoBack.vue'
+import Footer from './Footer.vue'
 
    export default {
       components: {
-         GoBack
+         GoBack,
+         Footer
       },
       data() {
          return {
             about: {
                title: "About me",
                imgSrc: null,
-               text: "I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations."
+               text: "I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations.I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations.I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations."
             }
          }
       }
@@ -36,13 +43,8 @@ import GoBack from './GoBack.vue'
 </script>
 
 <style scoped lang="scss">
-   #about-section {
-      height: 100%;
-
-      .propic {
-
-         background-color: #f2f2f2;
-         height: 400px
-      }
+   .propic {
+      background-color: #f2f2f2;
+      height: 400px
    }
 </style>

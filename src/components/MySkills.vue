@@ -2,19 +2,32 @@
    <section class="py-5 px-5">
       <GoBack />
 
-      <ul class="mt-5 list-unstyled">
-         <li v-for="(skill, index) in skills" :key="index">
-            <p :class="skill.style" class="mb-0">{{ skill.text }}</p>
-         </li>
-      </ul>
+      <div class="row">
+         <div class="col-12">
+            <ul class="mt-5 list-unstyled">
+               <li v-for="(skill, index) in skills" :key="index">
+                  <p :class="skill.style" class="mb-0">{{ skill.text }}</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+         <div class="col-12">
+            <Footer />
+         </div>
+      </div>
    </section>
 </template>
 
 <script>
 import GoBack from './GoBack.vue';
+import Footer from './Footer.vue';
+
    export default {
       components: {
-         GoBack
+         GoBack,
+         Footer
       },
       data() {
          return {

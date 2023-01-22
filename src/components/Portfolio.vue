@@ -8,10 +8,14 @@
          :info="works[index].info"
          :description="works[index].description"
       />
-      <div class="row" id="navigation-btn">
-         <div class="col-12 text-end">
-            <Button @click="prevWork()" class="me-2">Prev</Button>
-            <Button @click="nextWork()">Next</Button>
+      <div id="navigation-btn" class="text-end">
+         <Button @click="prevWork()" class="me-2">Prev</Button>
+         <Button @click="nextWork()">Next</Button>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+         <div class="col-12">
+            <Footer />
          </div>
       </div>
    </section>
@@ -21,13 +25,15 @@
 import GoBack from './GoBack.vue'
 import Slide from './Slide.vue'
 import Button from './Button.vue'
+import Footer from './Footer.vue'
 
    export default {
       name: 'PortfolioPreview',
       components: {
          GoBack,
          Slide,
-         Button
+         Button,
+         Footer
       },
       data() {
          return {
