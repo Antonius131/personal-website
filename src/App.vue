@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <div class="row" id="main-content">
+    <div class="row" id="main-wrapper">
       <transition name="fade" mode="out-in">
         <router-view />
       </transition>
@@ -28,11 +28,12 @@ body {
     #app {
       font-family: "Work Sans", sans-serif;
       color: #2c3e50;
-
-      #main-content {
+      
+      #main-wrapper {
         height: 100vh;
       }
     }
+
 }
 
 .fade-enter, .fade-leave-to {
