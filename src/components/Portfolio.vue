@@ -6,12 +6,11 @@
          :title="works[index].title"
          :imgSrc="works[index].imgSrc"
          :info="works[index].info"
+         :description="works[index].description"
       />
-      <div class="row">
-         <div class="col-6">
-            <Button @click="prevWork()">Prev</Button>
-         </div>
-         <div class="col-6 text-end">
+      <div class="row" id="navigation-btn">
+         <div class="col-12 text-end">
+            <Button @click="prevWork()" class="me-2">Prev</Button>
             <Button @click="nextWork()">Next</Button>
          </div>
       </div>
@@ -37,17 +36,20 @@ import Button from './Button.vue'
                {
                   title: 'Work title',
                   imageSrc: null,
-                  info: 'Work info'
+                  info: 'Work info',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                },
                {
                   title: 'Work title 2',
                   imageSrc: null,
-                  info: 'Work info 2'
+                  info: 'Work info 2',
+                  description: 'Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Nunc mattis enim ut tellus elementum. Habitant morbi tristique senectus et.'
                },
                {
                   title: 'Work title 3',
                   imageSrc: null,
-                  info: 'Work info 3'
+                  info: 'Work info 3',
+                  description: 'Tristique senectus et netus et. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Morbi tristique senectus et netus et malesuada.'
                }
             ]
          }
@@ -72,4 +74,14 @@ import Button from './Button.vue'
 </script>
 
 <style scoped lang="scss">
+#content-wrapper {
+   position: relative;
+
+   #navigation-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 3rem;
+   }
+}
+
 </style>
