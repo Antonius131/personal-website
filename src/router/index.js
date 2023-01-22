@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-import MainComponent from '../components/MainComponent'
+import Main from '../components/Main'
 import Portfolio from '../components/Portfolio'
 import AboutMe from '../components/AboutMe'
 import MySkills from '../components/MySkills'
@@ -11,7 +11,7 @@ import MySkills from '../components/MySkills'
 const routes = [
   {
     path: '/',
-    component: MainComponent
+    component: Main
   },
   {
     path: '/works',
