@@ -37,7 +37,7 @@ export default {
    .image-box {
 
       background-color: #f2f2f2;
-      height: 500px
+      height: 450px
    }
 }
 </style>
