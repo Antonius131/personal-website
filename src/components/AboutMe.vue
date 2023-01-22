@@ -1,35 +1,45 @@
 <template>
    <section id="about-section" class="py-5 px-5">
-      <div class="col-12">
-         <h4>
-            <router-link to="/">Back</router-link>
-         </h4>
-      </div>
-      <div class="row mb-3">
-         <div class="col-12">
-            <div class="image-box"></div>
-         </div>
-      </div>
+      <GoBack />
+
       <div class="row">
+         <div class="col-12 mb-3">
+            <div class="propic">
+               <img :src="about.imgSrc" :alt="about.title">
+            </div>
+         </div>
          <div class="col-12">
-            <h1>About me</h1>
-            <p>I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations.</p>
+            <h2>{{ about.title }}</h2>
+            <p>{{ about.text }}</p>
          </div>
       </div>
    </section>
 </template>
 
 <script>
-export default {
+import GoBack from './GoBack.vue'
 
-}
+   export default {
+      components: {
+         GoBack
+      },
+      data() {
+         return {
+            about: {
+               title: "About me",
+               imgSrc: null,
+               text: "I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations."
+            }
+         }
+      }
+   }
 </script>
 
 <style scoped lang="scss">
    #about-section {
       height: 100%;
 
-      .image-box {
+      .propic {
 
          background-color: #f2f2f2;
          height: 400px
