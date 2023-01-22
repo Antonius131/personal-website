@@ -4,8 +4,9 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import MainComponent from '../components/MainComponent'
-import PortfolioPreview from '../components/PortfolioPreview'
+import Portfolio from '../components/Portfolio'
 import AboutMe from '../components/AboutMe'
+import MySkills from '../components/MySkills'
 
 const routes = [
   {
@@ -14,11 +15,15 @@ const routes = [
   },
   {
     path: '/works',
-    component: PortfolioPreview
+    component: Portfolio
   },
   {
     path: '/about',
     component: AboutMe
+  },
+  {
+    path: '/skills',
+    component: MySkills
   }
 ]
 
