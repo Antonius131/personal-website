@@ -15,6 +15,11 @@
             {{ info }}
          </p>
       </div>
+      <div class="col-12">
+         <p>
+            {{ description }}
+         </p>
+      </div>
    </div>
 </template>
 
@@ -24,7 +29,8 @@ export default {
       index: Number,
       title: String,
       imgSrc: String,
-      info: String
+      info: String,
+      description: String
    }
 }
 </script>
