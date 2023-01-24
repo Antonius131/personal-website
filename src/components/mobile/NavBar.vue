@@ -1,7 +1,7 @@
 <template>
    <nav class="navbar">
       <ul class="navbar-nav">
-         <li v-for="item in navItems" :key="item.id">
+         <li v-for="item in navItems" :key="item">
             {{ item.text }}
             <router-link :to="item.path">
                {{ item.insideLink }}
@@ -18,20 +18,17 @@
          return {
             navItems: [
                {
-                  id: 1,
-                  path: '/works/',
+                  path: '/mobile/works/',
                   text: 'Look at',
                   insideLink: 'my works'
                },
                {
-                  id: 2,
-                  path: '/about/',
+                  path: '/mobile/about/',
                   text: 'Something',
                   insideLink: 'about Me'
                },
                {
-                  id: 3,
-                  path: '/skills/',
+                  path: '/mobile/skills/',
                   text: 'My',
                   insideLink: 'skills'
                }
