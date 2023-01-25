@@ -6,7 +6,12 @@
             <p>I’m an Italian based Web Developer and UX/UI Designer. Passionate about creative code, minimalism and bold color combinations. <i>SelfImproving</i> founder and <i>FeedingCats</i> contributor. :)</p>
          </div>
          <div class="col-12">
-            <NavBar />
+            <nav class="navbar">
+               <ul class="navbar-nav">
+                  <NavItems v-for="(item, index) in navItems" :key="index" 
+                     :item = "item"/>
+               </ul>
+            </nav>
             <hr class="my-4">
             <Footer />
          </div>
@@ -15,13 +20,34 @@
 </template>
 
 <script>
-   import NavBar from './NavBar.vue';
-   import Footer from './Footer.vue';
+   import NavItems from './NavItems';
+   import Footer from './Footer';
 
    export default {
       components: { 
-         NavBar,
+         NavItems,
          Footer
+      },
+      data() {
+         return {
+            navItems: [
+               {
+                  path: '/mobile/works/',
+                  text: 'Look at',
+                  insideLink: 'my works'
+               },
+               {
+                  path: '/mobile/about/',
+                  text: 'Something',
+                  insideLink: 'about Me'
+               },
+               {
+                  path: '/mobile/skills/',
+                  text: 'My',
+                  insideLink: 'skills'
+               }
+            ]
+         }
       }
    }
 </script>
