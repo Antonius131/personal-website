@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import GoBack from './GoBack.vue'
-import Footer from './Footer.vue'
+import GoBack from './GoBack'
+import Footer from './Footer'
 
    export default {
       components: {
