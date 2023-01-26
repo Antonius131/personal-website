@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +31,10 @@ body {
       
       #main-wrapper {
         height: 100vh;
+      }
+
+      section {
+        padding: 3rem;
       }
     }
 
