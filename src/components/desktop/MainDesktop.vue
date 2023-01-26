@@ -1,8 +1,6 @@
 <template>
    <div id="wrapper" class="col-12">
-      <div class="col-6">
-         <HeaderDesktop />
-      </div> 
+      <HeaderDesktop />
    </div>
 </template>
 
