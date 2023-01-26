@@ -5,7 +5,7 @@
             <MainDesktop />
          </div>
          <div id="content" class="col-6">
-            <HomeContent />
+            <Content />
          </div>
      </div>
    </div>
@@ -13,13 +13,13 @@
  
 <script>
 import MainDesktop from './components/desktop/MainDesktop';
-import HomeContent from './components/desktop/HomeContent'
+import Content from './components/desktop/Content'
  
    export default {
       name: 'App',
       components: {
          MainDesktop,
-         HomeContent
+         Content
       }
    }
 </script>
