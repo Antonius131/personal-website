@@ -1,5 +1,5 @@
 <template>
-   <section id="content-wrapper" class="py-5 px-5">
+   <section id="content-wrapper">
       <GoBack />
       <Slide
          :index="index"

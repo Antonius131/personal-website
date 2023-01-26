@@ -1,5 +1,5 @@
 <template>
-   <section class="py-5 px-5">
+   <section>
       <GoBack />
 
       <div class="row">
