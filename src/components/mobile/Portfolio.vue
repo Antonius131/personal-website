@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import GoBack from './GoBack.vue'
-import Slide from './Slide.vue'
-import Button from './Button.vue'
-import Footer from './Footer.vue'
+import GoBack from './GoBack'
+import Slide from './Slide'
+import Button from './Button'
+import Footer from './Footer'
 
    export default {
       name: 'PortfolioPreview',
@@ -89,5 +89,4 @@ import Footer from './Footer.vue'
       right: 3rem;
    }
 }
-
 </style>
