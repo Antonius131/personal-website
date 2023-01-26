@@ -5,24 +5,24 @@
             <MainDesktop />
          </div>
          <div id="content" class="col-6">
-            <transition name="fade" mode="out-in">
-               <router-view />
-            </transition>
+            <HomeContent />
          </div>
      </div>
    </div>
- </template>
+</template>
  
- <script>
- import MainDesktop from './components/desktop/MainDesktop';
+<script>
+import MainDesktop from './components/desktop/MainDesktop';
+import HomeContent from './components/desktop/HomeContent'
  
    export default {
       name: 'App',
       components: {
-      MainDesktop
+         MainDesktop,
+         HomeContent
       }
    }
- </script>
+</script>
  
 <style scoper lang="scss">
    body {
