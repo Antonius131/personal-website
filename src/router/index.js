@@ -16,7 +16,7 @@ import MySkills from '../components/mobile/MySkills'
 /**
  * Desktop components
  */
-import MainDesktop from '../components/desktop/MainDesktop'
+import HomeContent from '../components/desktop/HomeContent'
 
 const routes = [
   {
@@ -49,7 +49,7 @@ const routes = [
    */
   {
     path: '/desktop',
-    component: MainDesktop
+    component: HomeContent
   },
   {
     path: '/desktop/works',
