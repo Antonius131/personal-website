@@ -51,6 +51,18 @@ const routes = [
     path: '/desktop',
     component: MainDesktop
   },
+  {
+    path: '/desktop/works',
+    component: Portfolio
+  },
+  {
+    path: '/desktop/about',
+    component: AboutMe
+  },
+  {
+    path: '/desktop/skills',
+    component: MySkills
+  },
 ]
 
 const router = new VueRouter({
